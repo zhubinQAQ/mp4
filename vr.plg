@@ -6,6 +6,25 @@
 --------------------Configuration: vr - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/vr.res" /d "_DEBUG" /d "_AFXDLL" "D:\MP422E实习最原始\vr\mp4\vr.rc"" 
+Creating temporary file "C:\Users\zhubin\AppData\Local\Temp\RSP80B3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/vr.pdb" /debug /machine:I386 /out:"Debug/vr.exe" /pdbtype:sept 
+".\Debug\About.obj"
+".\Debug\DAmd.obj"
+".\Debug\Data.obj"
+".\Debug\Help.obj"
+".\Debug\Settdcs.obj"
+".\Debug\StdAfx.obj"
+".\Debug\vr.obj"
+".\Debug\vrDlg.obj"
+".\Debug\vr.res"
+]
+Creating command line "link.exe @C:\Users\zhubin\AppData\Local\Temp\RSP80B3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+Debug/vr.exe : warning LNK4084: total image size 810450944 exceeds max (268435456); image may not run
 
 
 

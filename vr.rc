@@ -79,7 +79,7 @@ IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
 // Dialog
 //
 
-IDD_VR_DIALOG DIALOGEX 0, 0, 556, 415
+IDD_VR_DIALOG DIALOGEX 0, 0, 556, 427
 STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
     WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
@@ -88,110 +88,77 @@ MENU IDR_MENU
 FONT 9, "宋体"
 BEGIN
     CONTROL         "ADnm",IDC_RADIO0,"Button",BS_AUTORADIOBUTTON | 
-                    WS_TABSTOP,413,15,31,11
+                    WS_TABSTOP,53,25,31,11
     CONTROL         "ADSH",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
-                    WS_TABSTOP,445,15,31,11
-    CONTROL         "DA模式",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
-                    WS_TABSTOP,476,15,40,11
+                    WS_TABSTOP,112,25,31,11
     CONTROL         "文件",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
-                    WS_TABSTOP,515,15,31,11
-    COMBOBOX        IDC_COMBO,466,46,50,71,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP,165,26,31,11
+    COMBOBOX        IDC_COMBO,458,78,50,71,CBS_DROPDOWNLIST | 
                     CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "",IDC_BX,"Static",SS_BLACKFRAME | WS_DISABLED,14,41,383,
-                    203
-    GROUPBOX        "数据分析",IDC_STATIC,407,37,137,91
-    GROUPBOX        "要显示的通道",IDC_STATIC,407,133,136,112
-    CONTROL         "通道0",IDC_CHECK0,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,147,38,11
-    CONTROL         "通道1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,457,147,38,11,0,HIDC_CHECK1
-    CONTROL         "通道2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,501,147,38,11
-    CONTROL         "通道3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,163,38,11
-    CONTROL         "通道4",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,457,163,38,11
-    CONTROL         "通道5",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,501,163,38,11
-    CONTROL         "通道6",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,179,38,11
-    CONTROL         "通道7",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,457,179,38,11
-    CONTROL         "通道8",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,501,179,38,11
-    CONTROL         "通道9",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,195,38,11
-    CONTROL         "通道10",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,457,195,38,11
-    CONTROL         "通道11",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,501,195,38,11
-    CONTROL         "通道12",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,211,38,11
-    CONTROL         "通道13",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,457,211,38,11
-    CONTROL         "通道14",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,501,211,38,11
-    CONTROL         "通道15",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
-                    WS_TABSTOP,413,227,38,11
-    GROUPBOX        "时域波形",IDC_STATIC,7,29,543,222
-    GROUPBOX        "模式选择",IDC_STATIC,407,4,143,26,WS_GROUP
-    CONTROL         "",IDC_BX2,"Static",SS_BLACKFRAME | WS_DISABLED,14,271,
-                    383,133
-    GROUPBOX        "频域波形",IDC_STATIC,7,259,397,150
-    GROUPBOX        "设置通道颜色",IDC_STATIC,407,259,144,149
-    CONTROL         "",IDC_STATIC0,"Static",SS_BLACKFRAME,447,275,13,12
-    RTEXT           "通道0：",IDC_STATIC,413,275,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC1,"Static",SS_BLACKFRAME,447,291,13,12
-    RTEXT           "通道1：",IDC_STATIC,413,291,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC2,"Static",SS_BLACKFRAME,447,307,13,12
-    RTEXT           "通道2：",IDC_STATIC,413,307,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC3,"Static",SS_BLACKFRAME,447,323,13,12
-    RTEXT           "通道3：",IDC_STATIC,413,323,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC4,"Static",SS_BLACKFRAME,447,339,13,12
-    RTEXT           "通道4：",IDC_STATIC,413,339,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC5,"Static",SS_BLACKFRAME,447,355,13,12
-    RTEXT           "通道5：",IDC_STATIC,413,355,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC6,"Static",SS_BLACKFRAME,447,371,13,12
-    RTEXT           "通道6：",IDC_STATIC,413,371,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC7,"Static",SS_BLACKFRAME,447,387,13,12
-    RTEXT           "通道7：",IDC_STATIC,413,387,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC8,"Static",SS_BLACKFRAME,526,275,13,12
-    RTEXT           "通道8：",IDC_STATIC,492,275,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC9,"Static",SS_BLACKFRAME,526,291,13,12
-    RTEXT           "通道9：",IDC_STATIC,492,291,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC10,"Static",SS_BLACKFRAME,526,307,13,12
-    RTEXT           "通道10：",IDC_STATIC,492,307,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC11,"Static",SS_BLACKFRAME,526,323,13,12
-    RTEXT           "通道11：",IDC_STATIC,492,323,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC12,"Static",SS_BLACKFRAME,526,339,13,12
-    RTEXT           "通道12：",IDC_STATIC,492,339,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC13,"Static",SS_BLACKFRAME,526,355,13,12
-    RTEXT           "通道13：",IDC_STATIC,492,355,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC14,"Static",SS_BLACKFRAME,526,371,13,12
-    RTEXT           "通道14：",IDC_STATIC,492,371,32,12,SS_CENTERIMAGE
-    CONTROL         "",IDC_STATIC15,"Static",SS_BLACKFRAME,526,387,13,12
-    RTEXT           "通道15：",IDC_STATIC,492,387,32,12,SS_CENTERIMAGE
-    RTEXT           "AD输入量程：",IDC_STATIC,414,49,49,10
+    CONTROL         "",IDC_BX,"Static",SS_BLACKFRAME | WS_DISABLED,14,49,426,
+                    171
+    GROUPBOX        "数据分析",IDC_STATIC,448,45,93,175
+    GROUPBOX        "要显示的通道",IDC_STATIC,14,222,528,28
+    CONTROL         "0",IDC_CHECK0,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,18,229,23,11
+    CONTROL         "1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,43,229,18,13,0,HIDC_CHECK1
+    CONTROL         "2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,63,229,24,11
+    CONTROL         "3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,89,228,22,13
+    CONTROL         "4",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,112,229,19,11
+    CONTROL         "5",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,133,229,20,12
+    CONTROL         "6",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,153,229,20,13
+    CONTROL         "7",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,173,228,18,13
+    CONTROL         "8",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,195,229,20,11
+    CONTROL         "9",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,217,229,20,13
+    CONTROL         "10",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,239,231,21,10
+    CONTROL         "11",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,262,231,22,11
+    CONTROL         "12",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,287,227,24,11
+    CONTROL         "13",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,314,228,23,12
+    CONTROL         "14",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,341,230,25,11
+    CONTROL         "15",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,368,230,22,12
+    GROUPBOX        "时域波形",IDC_STATIC,7,39,543,216
+    CONTROL         "",IDC_BX2,"Static",SS_BLACKFRAME | WS_DISABLED,16,273,
+                    528,144
+    GROUPBOX        "频域波形",IDC_STATIC,7,266,543,155
+    RTEXT           "AD输入量程：",IDC_STATIC,457,62,49,10
     CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | 
-                    TBS_NOTICKS,479,108,58,14
-    RTEXT           "时间轴压缩：",IDC_STATIC,414,110,50,10
-    LTEXT           "",IDC_ABC,466,110,13,12
-    RTEXT           "采样频率：",IDC_STATIC,423,82,40,8
-    EDITTEXT        IDC_TIMES,466,80,34,12,ES_AUTOHSCROLL | ES_NUMBER
-    LTEXT           "Hz",IDC_STATIC,504,82,8,8
-    LTEXT           "通道范围：",IDC_STATIC,423,66,40,8
-    EDITTEXT        IDC_MIN,466,64,15,12,ES_AUTOHSCROLL | ES_NUMBER
-    LTEXT           "到",IDC_STATIC,486,65,10,8
-    EDITTEXT        IDC_MAX,497,64,15,12,ES_AUTOHSCROLL | ES_NUMBER
-    EDITTEXT        IDC_EDIT1,371,20,32,12,ES_AUTOHSCROLL | ES_READONLY
-    RTEXT           "最近一次AD采集数据点数：",IDC_STATIC,272,21,96,8
-    RTEXT           "实采样频率：",IDC_STATIC,413,95,50,8
-    LTEXT           "Hz",IDC_STATIC,504,95,8,8
-    LTEXT           "",IDC_FACTTIMES,468,96,33,9
-    EDITTEXT        IDC_RATFORHARDWARE,371,6,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    RTEXT           "最近一次硬件测得频率数：",IDC_STATIC,272,7,96,8
-    SCROLLBAR       IDC_SCROLLBAR1,13,252,383,8
+                    TBS_NOTICKS,480,200,58,14
+    RTEXT           "时间轴压缩：",IDC_STATIC,460,187,50,10
+    LTEXT           "",IDC_ABC,461,202,13,12
+    RTEXT           "采样频率：",IDC_STATIC,458,129,40,8
+    EDITTEXT        IDC_TIMES,459,143,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Hz",IDC_STATIC,500,146,8,8
+    LTEXT           "通道范围：",IDC_STATIC,459,96,40,8
+    EDITTEXT        IDC_MIN,459,110,15,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "到",IDC_STATIC,478,111,10,8
+    EDITTEXT        IDC_MAX,491,111,15,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT1,501,27,32,12,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_TRANSPARENT
+    RTEXT           "最近一次AD采集数据点数：",IDC_STATIC,398,27,96,8,0,
+                    WS_EX_TRANSPARENT
+    RTEXT           "实采样频率：",IDC_STATIC,460,161,50,8
+    LTEXT           "Hz",IDC_STATIC,507,176,8,8
+    LTEXT           "",IDC_FACTTIMES,462,171,33,9
+    EDITTEXT        IDC_RATFORHARDWARE,501,10,32,12,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_TRANSPARENT
+    RTEXT           "最近一次硬件测得频率数：",IDC_STATIC,395,12,96,8,0,
+                    WS_EX_TRANSPARENT
+    SCROLLBAR       IDC_SCROLLBAR1,10,255,533,8
 END
 
 IDD_ABOUT DIALOG DISCARDABLE  0, 0, 193, 92
@@ -200,9 +167,9 @@ CAPTION "关于"
 FONT 10, "宋体"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,113,57,50,14
-    LTEXT           "2016年测控系统课程设计       小组成员：                                            王飞、吴诗慧      ",
+    LTEXT           "2018测控系统课程设计                                 朱滨、宋健      ",
                     IDC_STATIC,86,15,93,32
-    CONTROL         147,IDC_BMP,"Static",SS_BITMAP,7,6,78,68
+    CONTROL         157,IDC_BMP,"Static",SS_BITMAP,6,6,71,76
 END
 
 IDD_SETDA DIALOG DISCARDABLE  0, 0, 167, 141
@@ -346,6 +313,9 @@ END
 //
 
 IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\图标.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\2.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\无标题.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\无标题1.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -401,7 +371,7 @@ IDR_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
 // Toolbar
 //
 
-IDR_TOOLBAR TOOLBAR DISCARDABLE  35, 35
+IDR_TOOLBAR TOOLBAR DISCARDABLE  39, 17
 BEGIN
     BUTTON      ID_OPENDATA
     BUTTON      ID_SAVEDATA

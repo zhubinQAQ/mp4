@@ -1,5 +1,5 @@
 // vrDlg.cpp : implementation file
-//作者：王飞	时：2016年04月
+//作者：朱滨	时：2018年04月
 //
 #include "stdafx.h"
 #include "vr.h"
@@ -100,10 +100,10 @@ BEGIN_MESSAGE_MAP(CVrDlg, CDialog)//消息映射
 	//{{AFX_MSG_MAP(CVrDlg)
 	ON_WM_PAINT()
 	ON_COMMAND(IDM_AUOUT, OnAuout)
-	ON_WM_LBUTTONDOWN()
+//	ON_WM_LBUTTONDOWN()
 	ON_BN_CLICKED(IDC_RADIO0, OnClickedRadio0)
 	ON_BN_CLICKED(IDC_RADIO1, OnClickedRadio1)
-	ON_BN_CLICKED(IDC_RADIO2, OnClickedRadio2)
+//	ON_BN_CLICKED(IDC_RADIO2, OnClickedRadio2)
 	ON_BN_CLICKED(IDC_RADIO3, OnClickedRadio3)
 	ON_WM_TIMER()
 	ON_COMMAND(ID_RUN, OnRun)
@@ -355,7 +355,7 @@ void CVrDlg::DrawTimeBack(int x,int y)//绘制时域图形的时间轴
 	UpdateData(FALSE);
 }
 
-void CVrDlg::OnLButtonDown(UINT nFlags, CPoint point) //单击鼠标左键后检测是否是在颜色选择区域
+/*void CVrDlg::OnLButtonDown(UINT nFlags, CPoint point) //单击鼠标左键后检测是否是在颜色选择区域
 {
 	CString str;
 	CPoint p1,p2;
@@ -408,7 +408,7 @@ void CVrDlg::OnLButtonDown(UINT nFlags, CPoint point) //单击鼠标左键后检测是否是
 	CDialog::OnLButtonDown(nFlags, point);
 	}
 
-}
+}*/
 
 void CVrDlg::DrawColorTable()//初始化颜色表的颜色
 {
@@ -443,11 +443,11 @@ void CVrDlg::OnClickedRadio1()
 	ChangeToolBarState();
 }
 
-void CVrDlg::OnClickedRadio2() 
-{
-	modul=2;
-	ChangeToolBarState();
-}
+//void CVrDlg::OnClickedRadio2() 
+//{
+//	modul=2;
+//	ChangeToolBarState();
+//}
 
 void CVrDlg::OnClickedRadio3() 
 {

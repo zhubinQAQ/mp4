@@ -175,6 +175,10 @@ SOURCE=.\vrDlg.h
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 # Begin Source File
 
+SOURCE=.\res\2.bmp
+# End Source File
+# Begin Source File
+
 SOURCE=.\res\bitmap1.bmp
 # End Source File
 # Begin Source File
@@ -196,6 +200,14 @@ SOURCE=.\res\vr.rc2
 # Begin Source File
 
 SOURCE=".\res\图标.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\无标题.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\无标题1.bmp"
 # End Source File
 # End Group
 # Begin Source File
